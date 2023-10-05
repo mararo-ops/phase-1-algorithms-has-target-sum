@@ -9,6 +9,10 @@ function hasTargetSum(array, target) {
 /* 
   Add your pseudocode here
 */
+//1. Loop through the array.
+//2. For each element, loop again and add it to all subsequent elements.
+//3. If any sum equals the target, return true.
+//4. If no pairs add up to the target, return false.
 
 /*
   Add written explanation of your solution here
