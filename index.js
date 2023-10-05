@@ -50,3 +50,14 @@ console.log(hasTargetSum([4, 5, 1, 8], 3));    // true (1 + 2)
 }
 
 module.exports = hasTargetSum;
+function hasTargetSum(arr, target) {
+  let numbers = new Set();
+  for (let num of arr) {
+      if (numbers.has(target - num)) {
+          return true;
+      }
+      numbers.add(num);
+  }
+  return false;
+}
+
