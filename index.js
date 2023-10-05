@@ -17,6 +17,16 @@ function hasTargetSum(array, target) {
 /*
   Add written explanation of your solution here
 */
+function hasTargetSum(arr, target) {
+  for (let i = 0; i < arr.length; i++) {
+      for (let j = i + 1; j < arr.length; j++) {
+          if (arr[i] + arr[j] === target) {
+              return true;
+          }
+      }
+  }
+  return false;
+}
 
 // You can run `node index.js` to view these console logs
 if (require.main === module) {
